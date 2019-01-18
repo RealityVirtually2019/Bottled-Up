@@ -8,13 +8,12 @@ public class Cauldron : MonoBehaviour
     public int clampMaxStirSpeed = 50;
     public float stirringProgressMultiplier = 1;
     private float stirringProgress = 0;
-    private Dictionary<IngredientType, int> Ingredients = new Dictionary<IngredientType, int>();
-    public PotionType finalType = PotionType.NONE;
+    private Dictionary<IngredientType, int> ingredients = new Dictionary<IngredientType, int>();
+    public PotionType potionType = PotionType.NONE;
 
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -22,8 +21,8 @@ public class Cauldron : MonoBehaviour
     {
         if (stirringProgress >= 100)
         {
-            Brew();
             stirringProgress = 0;
+            Brew();
         }
     }
 
@@ -54,30 +53,31 @@ public class Cauldron : MonoBehaviour
         }
     }
 
-    void AddPreparedIngredient(IngredientType i)
+    void AddPreparedIngredient(IngredientType ingredientType)
     {
-        Ingredients.TryGetValue(i, out int count);
-        if (count == 0) Ingredients.Add(i, 1);
-        else Ingredients[i]++;
+        ingredients.TryGetValue(ingredientType, out int count);
+        if (count == 0) ingredients.Add(ingredientType, 1);
+        else ingredients[ingredientType]++;
     }
 
     void Brew()
     {
-        finalType = getType();
-        Debug.Log("Potion type is " + finalType);
+        potionType = GetPotionType();
+        Debug.Log("Potion type is " + potionType);
     }
 
-    PotionType getType()
+    PotionType GetPotionType()
     {
-        if (Ingredients[IngredientType.SABERCLAW] == 2 && Ingredients[IngredientType.GLOWSHROOM] == 1)
+        if (ingredients.ContainsKey(IngredientType.SABERCLAW) && ingredients.ContainsKey(IngredientType.GLOWSHROOM) && 
+                ingredients[IngredientType.SABERCLAW] == 2 && ingredients[IngredientType.GLOWSHROOM] == 1)
             return PotionType.HEALTH;
-        else if (Ingredients[IngredientType.GLOWSHROOM] == 3)
+        else if (ingredients.ContainsKey(IngredientType.GLOWSHROOM) && ingredients[IngredientType.GLOWSHROOM] == 3)
             return PotionType.GLOW;
         else return PotionType.MISTAKE;
     }
 
     private void Reset()
     {
-        Ingredients.Clear();
+        ingredients.Clear();
     }
 }
