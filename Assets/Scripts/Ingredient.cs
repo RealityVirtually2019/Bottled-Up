@@ -33,7 +33,6 @@ public class Ingredient : MonoBehaviour
         {
             OnCauldronContact();
         }
-
     }
 
     private void OnCauldronContact()
