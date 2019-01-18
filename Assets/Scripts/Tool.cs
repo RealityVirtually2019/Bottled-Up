@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ingredient : MonoBehaviour
+public class Tool : MonoBehaviour
 {
     public ToolType toolType;
 
