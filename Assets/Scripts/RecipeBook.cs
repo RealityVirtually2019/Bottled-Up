@@ -10,7 +10,7 @@ public class RecipeBook : MonoBehaviour
     {
         foreach (Recipe recipe in recipes)
         {
-            if (recipe.matchesRecipe(testRecipe))
+            if (recipe.MatchesRecipe(testRecipe))
             {
                 return recipe;
             }
