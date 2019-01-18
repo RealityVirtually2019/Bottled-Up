@@ -27,4 +27,10 @@ public class PreparedIngredient : MonoBehaviour
         //    OnCauldronContact();
         //}
     }
+
+    public void OnCauldronEnter()
+    {
+        //TODO: Special effects
+        Destroy(gameObject);
+    }
 }

@@ -22,9 +22,14 @@ public class Cauldron : MonoBehaviour
         
     }
 
-    void AddIngredient(IngredientType i)
+    private void OnTriggerEnter(Collider otherCollider)
     {
-        //poof animation here - invalid
+        PreparedIngredient collidedIngredient = otherCollider.GetComponent<PreparedIngredient>();
+        if (collidedIngredient != null)
+        {
+            AddPreparedIngredient(collidedIngredient.ingredientType);
+            collidedIngredient.OnCauldronEnter();
+        }
     }
 
     void AddPreparedIngredient(IngredientType i)
