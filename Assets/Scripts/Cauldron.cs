@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
-
+    public int minStirSpeed = 2;
+    public int clampMaxStirSpeed = 50;
+    public float stirringProgressMultiplier = 1;
+    private float stirringProgress = 0;
     private Dictionary<IngredientType, int> Ingredients = new Dictionary<IngredientType, int>();
 
     // Start is called before the first frame update
     void Start()
     {
-        AddPreparedIngredient(IngredientType.SABERCLAW);
-        AddPreparedIngredient(IngredientType.GLOWSHROOM);
-        AddPreparedIngredient(IngredientType.SABERCLAW);
-        Brew();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (stirringProgress >= 100)
+        {
+            Brew();
+            stirringProgress = 0;
+        }
     }
 
     private void OnTriggerEnter(Collider otherCollider)
@@ -29,6 +33,23 @@ public class Cauldron : MonoBehaviour
         {
             AddPreparedIngredient(collidedIngredient.ingredientType);
             collidedIngredient.OnCauldronEnter();
+        }
+    }
+
+    private void OnTriggerStay(Collider otherCollider)
+    {
+        Tool collidedTool = otherCollider.GetComponent<Tool>();
+        if (collidedTool != null && collidedTool.toolType == ToolType.STIRRER)
+        {
+            float toolSpeed = collidedTool.GetSpeed();
+            if (toolSpeed >= minStirSpeed)
+            {
+                stirringProgress += Mathf.Clamp(toolSpeed, 0, clampMaxStirSpeed) * stirringProgressMultiplier * Time.deltaTime;
+                if (Random.value < 0.2f)
+                {
+                    Debug.Log("Stirring progress: " + stirringProgress);
+                }
+            }
         }
     }
 

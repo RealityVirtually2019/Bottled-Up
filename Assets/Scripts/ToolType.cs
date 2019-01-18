@@ -5,5 +5,6 @@ using UnityEngine;
 public enum ToolType
 {
     KNIFE,
-    PESTLE
+    PESTLE,
+    STIRRER
 }
