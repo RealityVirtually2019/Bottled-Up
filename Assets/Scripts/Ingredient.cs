@@ -23,16 +23,28 @@ public class Ingredient : MonoBehaviour
 
     private void OnTriggerEnter(Collider otherCollider)
     {
-        Tool collidedTool = otherCollider.gameObject.GetComponent<Tool>();
-        if (collidedTool == null)
-        {
-            return;
-        }
-
-        if (collidedTool.toolType == toolType)
+        Tool collidedTool = otherCollider.GetComponent<Tool>();
+        if (collidedTool != null && collidedTool.toolType == toolType)
         {
             HitByTool();
         }
+        Cauldron collidedCauldron = otherCollider.GetComponent<Cauldron>();
+        if (collidedCauldron != null)
+        {
+            OnCauldronContact();
+        }
+
+    }
+
+    private void OnCauldronContact()
+    {
+        DestroyIngredient();
+    }
+
+    private void DestroyIngredient()
+    {
+        //TODO: Add flair
+        Destroy(gameObject);
     }
 
     private void HitByTool()

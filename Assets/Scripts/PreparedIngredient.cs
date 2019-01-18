@@ -17,4 +17,14 @@ public class PreparedIngredient : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider otherCollider)
+    {
+        //Tool collidedTool = otherCollider.GetComponent<Tool>();
+        //Cauldron collidedCauldron = otherCollider.GetComponent<Cauldron>();
+        //if (collidedCauldron != null)
+        //{
+        //    OnCauldronContact();
+        //}
+    }
 }
