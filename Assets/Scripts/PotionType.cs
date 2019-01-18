@@ -4,6 +4,7 @@ using UnityEngine;
 
 public enum PotionType
 {
+    NONE,
     HEALTH,
     GLOW,
     MISTAKE

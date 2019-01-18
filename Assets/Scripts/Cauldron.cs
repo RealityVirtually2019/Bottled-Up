@@ -9,6 +9,7 @@ public class Cauldron : MonoBehaviour
     public float stirringProgressMultiplier = 1;
     private float stirringProgress = 0;
     private Dictionary<IngredientType, int> Ingredients = new Dictionary<IngredientType, int>();
+    public PotionType finalType = PotionType.NONE;
 
     // Start is called before the first frame update
     void Start()
@@ -62,8 +63,8 @@ public class Cauldron : MonoBehaviour
 
     void Brew()
     {
-        PotionType type = getType();
-        Debug.Log("Potion type is " + type);
+        finalType = getType();
+        Debug.Log("Potion type is " + finalType);
     }
 
     PotionType getType()
@@ -73,5 +74,10 @@ public class Cauldron : MonoBehaviour
         else if (Ingredients[IngredientType.GLOWSHROOM] == 3)
             return PotionType.GLOW;
         else return PotionType.MISTAKE;
+    }
+
+    private void Reset()
+    {
+        Ingredients.Clear();
     }
 }
