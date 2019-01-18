@@ -5,11 +5,23 @@ using UnityEngine;
 [System.Serializable]
 public class Recipe
 {
-    public Dictionary<IngredientType, int> recipeIngredients;
+    public List<IngredientType> ingredientTypes;
+    public List<int> ingredientCounts;
     public PotionType createdPotionType;
 
     public bool MatchesRecipe(Dictionary<IngredientType, int> ingredients)
     {
-        return ingredients.Equals(recipeIngredients);
+        if (ingredientTypes.Count != ingredients.Count)
+        {
+            return false;
+        }
+        for (int i = 0; i < ingredientTypes.Count; i++)
+        {
+            if (!ingredients.ContainsKey(ingredientTypes[i]) || ingredients[ingredientTypes[i]] != ingredientCounts[i])
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }
