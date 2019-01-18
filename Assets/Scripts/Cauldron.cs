@@ -10,11 +10,10 @@ public class Cauldron : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       /*for (int i = 0; i < 3; i++)
-        {
-            AddPreparedIngredient(IngredientType.GLOWSHROOM);
-            AddPreparedIngredient(IngredientType.SABERCLAW);
-        }*/
+        AddPreparedIngredient(IngredientType.SABERCLAW);
+        AddPreparedIngredient(IngredientType.GLOWSHROOM);
+        AddPreparedIngredient(IngredientType.SABERCLAW);
+        Brew();
     }
 
     // Update is called once per frame
@@ -37,8 +36,16 @@ public class Cauldron : MonoBehaviour
 
     void Brew()
     {
-
+        PotionType type = getType();
+        Debug.Log("Potion type is " + type);
     }
-    //algoritm to determine ingredients
 
+    PotionType getType()
+    {
+        if (Ingredients[IngredientType.SABERCLAW] == 2 && Ingredients[IngredientType.GLOWSHROOM] == 1)
+            return PotionType.HEALTH;
+        else if (Ingredients[IngredientType.GLOWSHROOM] == 3)
+            return PotionType.GLOW;
+        else return PotionType.MISTAKE;
+    }
 }
