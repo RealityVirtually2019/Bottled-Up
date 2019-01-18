@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
-    public int minStirSpeed = 2;
-    public int clampMaxStirSpeed = 50;
-    public float stirringProgressMultiplier = 1;
+    public RecipeBook recipeBook;
+    private int minStirSpeed = 2;
+    private int clampMaxStirSpeed = 100;
+    private float stirringProgressMultiplier = 1;
     private float stirringProgress = 0;
     private Dictionary<IngredientType, int> ingredients = new Dictionary<IngredientType, int>();
-    public PotionType potionType = PotionType.NONE;
+    private PotionType potionType = PotionType.NONE;
 
     // Start is called before the first frame update
     void Start()
     {
+        AddPreparedIngredient(IngredientType.GLOWSHROOM);
+        AddPreparedIngredient(IngredientType.SABERCLAW);
     }
 
     // Update is called once per frame
@@ -62,18 +65,13 @@ public class Cauldron : MonoBehaviour
 
     void Brew()
     {
-        potionType = GetPotionType();
+        potionType = recipeBook.GetBrewingResult(ingredients);
         Debug.Log("Potion type is " + potionType);
     }
 
-    PotionType GetPotionType()
+    public PotionType GetPotionType()
     {
-        if (ingredients.ContainsKey(IngredientType.SABERCLAW) && ingredients.ContainsKey(IngredientType.GLOWSHROOM) && 
-                ingredients[IngredientType.SABERCLAW] == 2 && ingredients[IngredientType.GLOWSHROOM] == 1)
-            return PotionType.HEALTH;
-        else if (ingredients.ContainsKey(IngredientType.GLOWSHROOM) && ingredients[IngredientType.GLOWSHROOM] == 3)
-            return PotionType.GLOW;
-        else return PotionType.MISTAKE;
+        return potionType;
     }
 
     private void Reset()
