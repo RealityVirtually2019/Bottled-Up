@@ -19,9 +19,9 @@ public class Bottle : MonoBehaviour
     private void OnTriggerEnter(Collider otherCollider)
     {
         Cauldron cauldron = otherCollider.GetComponent<Cauldron>();
-        if (cauldron != null && cauldron.finalType != PotionType.NONE)
+        if (cauldron != null && cauldron.potionType != PotionType.NONE)
         {
-            type = cauldron.finalType;
+            type = cauldron.potionType;
             Debug.Log("This bottle is now of type " + type);
         }
     }
