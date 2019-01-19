@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: d8a8d69e0d9074efc81ccd9b979ca9dc
+guid: 80e736440729440d7b01d298a83b194b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: group_0_16448250
+    100000: group_0_3888547
     100002: //RootNode
-    400000: group_0_16448250
+    400000: group_0_3888547
     400002: //RootNode
-    2100000: group_0_16448250Mat
-    2300000: group_0_16448250
-    3300000: group_0_16448250
-    4300000: group_0_16448250
+    2100000: group_0_3888547Mat
+    2300000: group_0_3888547
+    3300000: group_0_3888547
+    4300000: group_0_3888547
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -52,7 +52,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

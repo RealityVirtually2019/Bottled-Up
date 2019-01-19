@@ -1,16 +1,47 @@
 fileFormatVersion: 2
-guid: d8a8d69e0d9074efc81ccd9b979ca9dc
+guid: 6f5e55b691e9e44fe8c156888128f851
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: group_0_16448250
+    100000: Cylinder
     100002: //RootNode
-    400000: group_0_16448250
+    100004: Plant_c_03_LOD2.000
+    100006: Plant_c_03_LOD2.001
+    100008: Plant_c_03_LOD2.002
+    100010: Plant_c_03_LOD2.003
+    100012: Plant_c_03_LOD2.004
+    100014: Plant_c_03_LOD2.066
+    400000: Cylinder
     400002: //RootNode
-    2100000: group_0_16448250Mat
-    2300000: group_0_16448250
-    3300000: group_0_16448250
-    4300000: group_0_16448250
+    400004: Plant_c_03_LOD2.000
+    400006: Plant_c_03_LOD2.001
+    400008: Plant_c_03_LOD2.002
+    400010: Plant_c_03_LOD2.003
+    400012: Plant_c_03_LOD2.004
+    400014: Plant_c_03_LOD2.066
+    2100000: Leaves_Green_02
+    2100002: Material.001
+    2300000: Cylinder
+    2300002: Plant_c_03_LOD2.000
+    2300004: Plant_c_03_LOD2.001
+    2300006: Plant_c_03_LOD2.002
+    2300008: Plant_c_03_LOD2.003
+    2300010: Plant_c_03_LOD2.004
+    2300012: Plant_c_03_LOD2.066
+    3300000: Cylinder
+    3300002: Plant_c_03_LOD2.000
+    3300004: Plant_c_03_LOD2.001
+    3300006: Plant_c_03_LOD2.002
+    3300008: Plant_c_03_LOD2.003
+    3300010: Plant_c_03_LOD2.004
+    3300012: Plant_c_03_LOD2.066
+    4300000: Plant_c_03_LOD2.004
+    4300002: Plant_c_03_LOD2.003
+    4300004: Plant_c_03_LOD2.002
+    4300006: Plant_c_03_LOD2.001
+    4300008: Plant_c_03_LOD2.000
+    4300010: Plant_c_03_LOD2.066
+    4300012: Cylinder
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -52,7 +83,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
