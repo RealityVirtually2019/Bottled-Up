@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 400000}
   - component: {fileID: 19800000}
+  - component: {fileID: 4182998871771793554}
   - component: {fileID: 19900000}
   m_Layer: 0
-  m_Name: FX_Fire
+  m_Name: fire prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4645,6 +4646,18 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &4182998871771793554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40423f3827c7f4185b57a86540a80fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!199 &19900000
 ParticleSystemRenderer:
   serializedVersion: 6
