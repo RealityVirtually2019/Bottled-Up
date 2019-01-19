@@ -1,17 +1,24 @@
 fileFormatVersion: 2
-guid: 918b677db89fb4a458e851069bc0743e
+guid: 6fda77cbd2d0647b9983f2c47f2205c9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: default
+    100002: LeverFrame
+    100004: LeverHandle
     400000: //RootNode
-    400002: default
-    2100000: Material.001
-    2300000: default
-    3300000: default
-    4300000: default
-    9500000: //RootNode
+    400002: LeverFrame
+    400004: LeverHandle
+    2100000: LeverFrameFrame
+    2100002: LeveFrameSlide
+    2100004: LeverHandleBall
+    2100006: LeverHandleBase
+    2300000: LeverFrame
+    2300002: LeverHandle
+    3300000: LeverFrame
+    3300002: LeverHandle
+    4300000: LeverFrame
+    4300002: LeverHandle
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -65,7 +72,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -92,7 +99,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

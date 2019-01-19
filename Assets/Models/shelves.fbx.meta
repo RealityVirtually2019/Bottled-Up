@@ -1,18 +1,34 @@
 fileFormatVersion: 2
-guid: 918b677db89fb4a458e851069bc0743e
+guid: 6743e110ef5b44a199564e76484a77d8
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: default
-    400000: //RootNode
-    400002: default
-    2100000: Material.001
-    2300000: default
-    3300000: default
-    4300000: default
-    9500000: //RootNode
-  externalObjects: {}
+    100000: Cube
+    100002: Lamp
+    100004: //RootNode
+    400000: Cube
+    400002: Lamp
+    400004: //RootNode
+    2100000: ShelvesDark
+    2100002: ShelvesLight
+    2300000: Cube
+    2300002: //RootNode
+    3300000: Cube
+    3300002: //RootNode
+    4300000: Cube
+    4300002: Shelves
+    10800000: Lamp
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShelvesDark
+    second: {fileID: 2100000, guid: 0eca25406188d4f38b4fcf7115c4c89f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShelvesLight
+    second: {fileID: 2100000, guid: 93e23de9d4a5643668bf8cd8cb8a6662, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -65,7 +81,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -92,7 +108,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
