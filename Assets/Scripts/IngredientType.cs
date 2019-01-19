@@ -5,5 +5,6 @@ using UnityEngine;
 public enum IngredientType
 {
     GLOWSHROOM,
-    SABERCLAW
+    SABERCLAW,
+    NEWTEYE
 }
