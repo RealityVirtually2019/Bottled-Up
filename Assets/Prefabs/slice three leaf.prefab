@@ -9,6 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3926309309012386323}
+  - component: {fileID: 8172867125484429497}
+  - component: {fileID: 4123903954361002265}
+  - component: {fileID: 3831335943111868685}
   m_Layer: 0
   m_Name: slice three leaf
   m_TagString: Untagged
@@ -32,6 +35,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8172867125484429497
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088498332913848782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.03761529
+  m_Height: 0.3037306
+  m_Direction: 1
+  m_Center: {x: 0.01476606, y: 0.1127761, z: 0.009610817}
+--- !u!136 &4123903954361002265
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088498332913848782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.075864136
+  m_Height: 0.32553282
+  m_Direction: 2
+  m_Center: {x: 0.03, y: 0.18, z: -0.01}
+--- !u!114 &3831335943111868685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088498332913848782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f3503ba8dc0482aa8699fee7f63349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientType: 0
 --- !u!1 &4311844591508345821
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,9 +87,6 @@ GameObject:
   - component: {fileID: 1027070405036130474}
   - component: {fileID: 8491573163254386704}
   - component: {fileID: 3879170327605111132}
-  - component: {fileID: 921541227186580804}
-  - component: {fileID: 954596434101242132}
-  - component: {fileID: 7870483554335583417}
   m_Layer: 0
   m_Name: slice3 (2)
   m_TagString: Untagged
@@ -61,7 +102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4311844591508345821}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.972, y: 1.06, z: -0.30726212}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3926309309012386323}
@@ -113,49 +154,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &921541227186580804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4311844591508345821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f3503ba8dc0482aa8699fee7f63349, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 0
---- !u!54 &954596434101242132
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4311844591508345821}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!136 &7870483554335583417
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4311844591508345821}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.16966464
-  m_Height: 0.33932927
-  m_Direction: 1
-  m_Center: {x: -0.013898104, y: 0.105580226, z: 0.041390702}
 --- !u!1 &6308126418078262672
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6308126418078262672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.972, y: 1.17, z: -0.3072621}
+  m_LocalPosition: {x: 0, y: 0.151, z: 0}
   m_LocalScale: {x: 0.89291996, y: 0.89291996, z: 0.89291996}
   m_Children: []
   m_Father: {fileID: 3926309309012386323}
