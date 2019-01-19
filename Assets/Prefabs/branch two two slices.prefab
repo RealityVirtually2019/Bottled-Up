@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 2295691751569605810}
   - component: {fileID: 953131955319528550}
   - component: {fileID: 7243027941180834815}
+  - component: {fileID: 1782629457300337739}
   m_Layer: 0
   m_Name: branch two two slices
   m_TagString: Untagged
@@ -139,10 +140,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.21391132
-  m_Height: 0.4845934
+  m_Radius: 0.03666134
+  m_Height: 0.21265852
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.062344193, y: -0.020407021, z: -0.018411264}
 --- !u!114 &7243027941180834815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +159,20 @@ MonoBehaviour:
   preparedForm: {fileID: 0}
   toolType: 0
   hitsToPrepare: 3
+--- !u!136 &1782629457300337739
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3145033276673287142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.061111078
+  m_Height: 0.31279904
+  m_Direction: 2
+  m_Center: {x: 0.026218653, y: 0.088393226, z: -0.021072268}
 --- !u!1 &5470112844912063374
 GameObject:
   m_ObjectHideFlags: 0
