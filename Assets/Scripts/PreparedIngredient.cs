@@ -32,7 +32,6 @@ public class PreparedIngredient : MonoBehaviour
     {
         //TODO: Special effects
         ParticleSystem splash = Instantiate(Resources.Load("splash", typeof(ParticleSystem))) as ParticleSystem;
-        Debug.Log(transform.position + " " + transform.rotation);
         splash.transform.position = transform.position;
         Destroy(gameObject);
     }

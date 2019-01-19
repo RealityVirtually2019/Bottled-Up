@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cauldron : MonoBehaviour
 {
     public RecipeBook recipeBook;
+    public Potion potion;
     private int minStirSpeed = 2;
     private int clampMaxStirSpeed = 100;
     private float stirringProgressMultiplier = 1;
@@ -48,10 +49,10 @@ public class Cauldron : MonoBehaviour
             if (toolSpeed >= minStirSpeed)
             {
                 stirringProgress += Mathf.Clamp(toolSpeed, 0, clampMaxStirSpeed) * stirringProgressMultiplier * Time.deltaTime;
-                //if (Random.value < 0.05f)
-                //{
-                //    Debug.Log("Stirring progress: " + stirringProgress);
-                //}
+                if (Random.value < 0.2f)
+                {
+                    Debug.Log("Stirring progress: " + stirringProgress);
+                }
             }
         }
     }
@@ -61,12 +62,15 @@ public class Cauldron : MonoBehaviour
         ingredients.TryGetValue(ingredientType, out int count);
         if (count == 0) ingredients.Add(ingredientType, 1);
         else ingredients[ingredientType]++;
+        Debug.Log("adding " + ingredientType);
     }
 
     void Brew()
     {
         potionType = recipeBook.GetBrewingResult(ingredients);
-        //Debug.Log("Potion type is " + potionType);
+        Debug.Log("Potion type is " + potionType);
+        potion.ChangeColor(potionType);
+
     }
 
     public PotionType GetPotionType()

@@ -566,6 +566,12 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!198 &326030214 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7972904032612985939, guid: 18f6eb2bb458940369c1eb35025c0462,
+    type: 3}
+  m_PrefabInstance: {fileID: 188844125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &347587612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2345,6 +2351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recipeBook: {fileID: 615289977411497430}
+  potion: {fileID: 0}
 --- !u!1 &615289977411497429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2366,7 @@ GameObject:
   - component: {fileID: 615289977411497263}
   - component: {fileID: 615289977411497428}
   - component: {fileID: 615289977411497430}
+  - component: {fileID: 615289977411497431}
   m_Layer: 0
   m_Name: potion
   m_TagString: Untagged
@@ -2382,6 +2390,19 @@ MonoBehaviour:
   - ingredientTypes: 0000000002000000
     ingredientCounts: 0200000001000000
     createdPotionType: 2
+--- !u!114 &615289977411497431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615289977411497429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70efcef237d074af29f6f56e52ef9489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbles: {fileID: 326030214}
 --- !u!1 &2696245638410365056
 GameObject:
   m_ObjectHideFlags: 0
