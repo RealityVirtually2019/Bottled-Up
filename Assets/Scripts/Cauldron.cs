@@ -5,7 +5,6 @@ using UnityEngine;
 public class Cauldron : MonoBehaviour
 {
     public RecipeBook recipeBook;
-    public Potion potion;
     private int minStirSpeed = 2;
     private int clampMaxStirSpeed = 100;
     private float stirringProgressMultiplier = 1;
@@ -16,14 +15,13 @@ public class Cauldron : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AddPreparedIngredient(IngredientType.GLOWSHROOM);
-        AddPreparedIngredient(IngredientType.SABERCLAW);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (stirringProgress >= 100)
+        if (stirringProgress >= 2)
         {
             stirringProgress = 0;
             Brew();
@@ -69,7 +67,7 @@ public class Cauldron : MonoBehaviour
     {
         potionType = recipeBook.GetBrewingResult(ingredients);
         Debug.Log("Potion type is " + potionType);
-        potion.ChangeColor(potionType);
+        gameObject.GetComponent<Potion>().ChangeColor(potionType);
 
     }
 

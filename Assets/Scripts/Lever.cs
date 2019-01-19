@@ -25,7 +25,7 @@ public class Lever : MonoBehaviour
         }
         if (Random.value < 0.05f)
         {
-            Debug.Log("Lever value: " + GetValue());
+            //Debug.Log("Lever value: " + GetValue());
         }
     }
 

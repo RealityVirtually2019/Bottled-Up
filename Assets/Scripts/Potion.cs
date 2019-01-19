@@ -5,10 +5,11 @@ using UnityEngine;
 public class Potion : MonoBehaviour
 {
     public ParticleSystem bubbles;
+    public ParticleSystem splash;
     // Start is called before the first frame update
     void Start()
     {
-        //ChangeColor(PotionType.NONE);
+        Reset();
     }
 
     // Update is called once per frame
@@ -33,5 +34,13 @@ public class Potion : MonoBehaviour
         GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
         //change bubble material
         bubbles.GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
+        //change splash material
+        splash.GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
+    }
+
+    private void Reset()
+    {
+        splash.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
+        bubbles.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
     }
 }
