@@ -1,17 +1,30 @@
 fileFormatVersion: 2
-guid: d8a8d69e0d9074efc81ccd9b979ca9dc
+guid: affe2a7aeac7c44099dad3fc789d4a84
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: group_0_16448250
-    100002: //RootNode
-    400000: group_0_16448250
-    400002: //RootNode
-    2100000: group_0_16448250Mat
-    2300000: group_0_16448250
-    3300000: group_0_16448250
-    4300000: group_0_16448250
-    2186277476908879412: ImportLogs
+    100000: //RootNode
+    100002: Camera
+    100004: Cube
+    100006: Cube.001
+    100008: Icosphere
+    400000: //RootNode
+    400002: Camera
+    400004: Cube
+    400006: Cube.001
+    400008: Icosphere
+    2000000: Camera
+    2100000: Gem Stone Diamond
+    2100002: Material.001
+    2300000: Cube
+    2300002: Cube.001
+    2300004: Icosphere
+    3300000: Cube
+    3300002: Cube.001
+    3300004: Icosphere
+    4300000: Icosphere
+    4300002: Cube.001
+    4300004: Cube
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -52,7 +65,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

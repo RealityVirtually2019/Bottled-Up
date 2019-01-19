@@ -20,7 +20,9 @@ public class Lever : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FollowTargetObject();
+        if (targetTransform != null) {
+            FollowTargetObject();
+        }
         if (Random.value < 0.05f)
         {
             Debug.Log("Lever value: " + GetValue());

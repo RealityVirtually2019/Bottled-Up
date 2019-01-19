@@ -9,6 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+<<<<<<< HEAD
   m_ShaderKeywords: _ALPHATEST_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -16,6 +17,14 @@ Material:
   m_CustomRenderQueue: 2450
   stringTagMap:
     RenderType: TransparentCutout
+=======
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+>>>>>>> d60f2892cf37413d1ea5bb03a027cd8bef2e8142
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -41,7 +50,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 0c84bfd19fe8842c3b3d63e7f0c11348, type: 3}
+=======
+        m_Texture: {fileID: 0}
+>>>>>>> d60f2892cf37413d1ea5bb03a027cd8bef2e8142
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -65,7 +78,11 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
+<<<<<<< HEAD
     - _Mode: 1
+=======
+    - _Mode: 0
+>>>>>>> d60f2892cf37413d1ea5bb03a027cd8bef2e8142
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -74,5 +91,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+=======
+    - _Color: {r: 0.69411767, g: 0.5882353, b: 0.4156863, a: 1}
+>>>>>>> d60f2892cf37413d1ea5bb03a027cd8bef2e8142
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

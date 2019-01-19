@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: d8a8d69e0d9074efc81ccd9b979ca9dc
+guid: 2c67c7afb3d6a6b4d95e78e646e762fa
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: group_0_16448250
-    100002: //RootNode
-    400000: group_0_16448250
-    400002: //RootNode
-    2100000: group_0_16448250Mat
-    2300000: group_0_16448250
-    3300000: group_0_16448250
-    4300000: group_0_16448250
-    2186277476908879412: ImportLogs
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Material_001
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Sphere
+    7400000: Default Take
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -52,7 +51,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -65,7 +64,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -92,7 +91,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
