@@ -1506,7 +1506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f6c0d7b5a00aa4a8d38a09a0480032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonAction: {fileID: 11400000, guid: be582743977984641b784e0dd832ac17, type: 2}
+  skeletonAction: {fileID: 11400000, guid: db80358cb57c4304f8347617d4756347, type: 2}
   inputSource: 1
   rangeOfMotion: 1
   skeletonRoot: {fileID: 4000010605282222}
@@ -1862,7 +1862,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: ceb48f72b3325c74e95838fb760d0ab0, type: 2}

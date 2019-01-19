@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5fb0ca93b55ef4b8d54b512b103341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poseAction: {fileID: 11400000, guid: 269907039304b2b428adfd6f84751177, type: 2}
+  poseAction: {fileID: 11400000, guid: 0b90861662ec2524db6fc1cc49284767, type: 2}
   inputSource: 1
   origin: {fileID: 0}
   onTransformUpdated:
@@ -117,7 +117,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5fb0ca93b55ef4b8d54b512b103341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poseAction: {fileID: 11400000, guid: 269907039304b2b428adfd6f84751177, type: 2}
+  poseAction: {fileID: 11400000, guid: 0b90861662ec2524db6fc1cc49284767, type: 2}
   inputSource: 2
   origin: {fileID: 0}
   onTransformUpdated:

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changeTolerance: 0.000001
   fullPath: /actions/default/in/Squeeze
-  actionSet: {fileID: 11400000, guid: a4ce86d0ba453234db3c8a3ee273b3bb, type: 2}
+  actionSet: {fileID: 11400000, guid: ba184e00e8cece84db3597e7af019dc0, type: 2}
   direction: 0

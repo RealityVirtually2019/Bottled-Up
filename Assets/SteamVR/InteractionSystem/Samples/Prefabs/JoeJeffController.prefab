@@ -54,7 +54,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 76f42063ac80e7e45aa27bebda813768, type: 2}
@@ -139,7 +139,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 76f42063ac80e7e45aa27bebda813768, type: 2}
@@ -205,9 +205,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Joystick: {fileID: 4000013232486850}
   joyMove: 0.015
-  actionSet: {fileID: 11400000, guid: f96eb026a61c421468442070a930fb93, type: 2}
-  a_move: {fileID: 11400000, guid: 797db5c3797dac348bb5caecead7593f, type: 2}
-  a_jump: {fileID: 11400000, guid: 3b61b24d0ac17554bae3105c17aefc48, type: 2}
+  actionSet: {fileID: 0}
+  a_move: {fileID: 0}
+  a_jump: {fileID: 0}
   character: {fileID: 0}
   jumpHighlight: {fileID: 23000012427665184}
 --- !u!114 &114000013789606070

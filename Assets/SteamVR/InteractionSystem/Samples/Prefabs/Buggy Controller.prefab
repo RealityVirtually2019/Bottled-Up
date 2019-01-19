@@ -323,7 +323,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8429e69bebe55ae4392d143cc550134f, type: 2}
@@ -402,11 +402,11 @@ MonoBehaviour:
   ui_steerangle: 60
   ui_fillAngles: {x: 0.29, y: 0.7}
   resetToPoint: {fileID: 0}
-  actionSet: {fileID: 11400000, guid: 5eedff7b205e96e458954cea4071041d, type: 2}
-  a_steering: {fileID: 11400000, guid: c33597e0a2119bd4fa50da8fa199635f, type: 2}
-  a_trigger: {fileID: 11400000, guid: 13ef6bfa4e27cac43a3e60c01f54956c, type: 2}
-  a_brake: {fileID: 11400000, guid: 7f4fccb0aafbec64fb72132248c2023a, type: 2}
-  a_reset: {fileID: 11400000, guid: cd39146091bbf49478442b0af8912952, type: 2}
+  actionSet: {fileID: 0}
+  a_steering: {fileID: 0}
+  a_trigger: {fileID: 0}
+  a_brake: {fileID: 0}
+  a_reset: {fileID: 0}
 --- !u!114 &114379823079474456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,7 +618,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8429e69bebe55ae4392d143cc550134f, type: 2}
@@ -725,7 +725,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8429e69bebe55ae4392d143cc550134f, type: 2}
@@ -876,7 +876,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8429e69bebe55ae4392d143cc550134f, type: 2}
@@ -953,7 +953,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8429e69bebe55ae4392d143cc550134f, type: 2}
@@ -1105,7 +1105,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8429e69bebe55ae4392d143cc550134f, type: 2}

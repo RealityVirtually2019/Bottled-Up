@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 158d046322c150348bfed00c688d3142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squeezyAction: {fileID: 11400000, guid: de032a0516dfb114a87f1327bf49b936, type: 2}
+  squeezyAction: {fileID: 0}
   inputSource: 1
   fingers:
   - mass: 1
@@ -1031,7 +1031,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f1f5a7b9d67d8354799973d55caf81ad, type: 2}
@@ -1148,7 +1148,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f1f5a7b9d67d8354799973d55caf81ad, type: 2}
@@ -1234,7 +1234,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f1f5a7b9d67d8354799973d55caf81ad, type: 2}
@@ -1879,7 +1879,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f1f5a7b9d67d8354799973d55caf81ad, type: 2}
@@ -2102,7 +2102,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f1f5a7b9d67d8354799973d55caf81ad, type: 2}
@@ -2356,7 +2356,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f1f5a7b9d67d8354799973d55caf81ad, type: 2}
@@ -2955,7 +2955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f6c0d7b5a00aa4a8d38a09a0480032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonAction: {fileID: 11400000, guid: be582743977984641b784e0dd832ac17, type: 2}
+  skeletonAction: {fileID: 0}
   inputSource: 1
   rangeOfMotion: 1
   skeletonRoot: {fileID: 4000011512971474}

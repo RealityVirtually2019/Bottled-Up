@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a16cd4b43168a34f8b2f37877c87c12, type: 3}
+  m_Script: {fileID: 11500000, guid: 6145327b7b929524fa9606c718e7a1fe, type: 3}
   m_Name: SteamVR_Input_ActionSet_default_Out
   m_EditorClassIdentifier: 
   actionSet: {fileID: 0}
   listDirection: 1
   actions:
-  - {fileID: 11400000, guid: e9d230f004c40e949b93f03b54cd7876, type: 2}
-  Haptic: {fileID: 11400000, guid: e9d230f004c40e949b93f03b54cd7876, type: 2}
+  - {fileID: 11400000, guid: bc69f30ae04622949bd7993faf1f8aaa, type: 2}
+  Haptic: {fileID: 11400000, guid: bc69f30ae04622949bd7993faf1f8aaa, type: 2}
