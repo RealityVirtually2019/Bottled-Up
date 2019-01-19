@@ -183,5 +183,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preparedForm: {fileID: 0}
-  toolType: 0
+  toolType: 1
   hitsToPrepare: 3
