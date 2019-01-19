@@ -29,7 +29,7 @@ public class Cauldron : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider otherCollider)
+    private void OnTriggerEnter(Collider otherCollider) //make more broad for other objects
     {
         PreparedIngredient collidedIngredient = otherCollider.GetComponent<PreparedIngredient>();
         if (collidedIngredient != null)

@@ -20,17 +20,20 @@ public class PreparedIngredient : MonoBehaviour
 
     private void OnTriggerEnter(Collider otherCollider)
     {
-        //Tool collidedTool = otherCollider.GetComponent<Tool>();
-        //Cauldron collidedCauldron = otherCollider.GetComponent<Cauldron>();
-        //if (collidedCauldron != null)
-        //{
-        //    OnCauldronContact();
-        //}
+        /*Tool collidedTool = otherCollider.GetComponent<Tool>();
+        Cauldron collidedCauldron = otherCollider.GetComponent<Cauldron>();
+        if (collidedCauldron != null)
+        {
+            OnCauldronEnter();
+        }*/
     }
 
     public void OnCauldronEnter()
     {
         //TODO: Special effects
+        ParticleSystem splash = Instantiate(Resources.Load("splash", typeof(ParticleSystem))) as ParticleSystem;
+        Debug.Log(transform.position + " " + transform.rotation);
+        splash.transform.position = transform.position;
         Destroy(gameObject);
     }
 }

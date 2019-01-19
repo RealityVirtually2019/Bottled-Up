@@ -32,7 +32,17 @@ ModelImporter:
     4300004: slice3
     4300006: slice4
     4300008: slice5
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head_Red_01
+    second: {fileID: 2100000, guid: 9f380e5d35ca841e9814ac54374044b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stem_Brown_01
+    second: {fileID: 2100000, guid: 984c2f8b977ff4dffab3c3832314d3a1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
