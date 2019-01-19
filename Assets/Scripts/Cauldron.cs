@@ -48,10 +48,10 @@ public class Cauldron : MonoBehaviour
             if (toolSpeed >= minStirSpeed)
             {
                 stirringProgress += Mathf.Clamp(toolSpeed, 0, clampMaxStirSpeed) * stirringProgressMultiplier * Time.deltaTime;
-                if (Random.value < 0.2f)
-                {
-                    Debug.Log("Stirring progress: " + stirringProgress);
-                }
+                //if (Random.value < 0.05f)
+                //{
+                //    Debug.Log("Stirring progress: " + stirringProgress);
+                //}
             }
         }
     }
@@ -66,7 +66,7 @@ public class Cauldron : MonoBehaviour
     void Brew()
     {
         potionType = recipeBook.GetBrewingResult(ingredients);
-        Debug.Log("Potion type is " + potionType);
+        //Debug.Log("Potion type is " + potionType);
     }
 
     public PotionType GetPotionType()
