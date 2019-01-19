@@ -3,28 +3,29 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa002099f5ceb1a49b73904d8ad1e277, type: 3}
+  m_Script: {fileID: 11500000, guid: 329560c430fd1dc48b8f8263494e49d5, type: 3}
   m_Name: __actions_buggy
   m_EditorClassIdentifier: 
   allActions:
-  - {fileID: 11400000, guid: c33597e0a2119bd4fa50da8fa199635f, type: 2}
-  - {fileID: 11400000, guid: 13ef6bfa4e27cac43a3e60c01f54956c, type: 2}
-  - {fileID: 11400000, guid: 7f4fccb0aafbec64fb72132248c2023a, type: 2}
-  - {fileID: 11400000, guid: cd39146091bbf49478442b0af8912952, type: 2}
+  - {fileID: 11400000, guid: 5bce29029a7243b4b8eeac6af7bdf084, type: 2}
+  - {fileID: 11400000, guid: 84bb66706fc43c84585e22c0a503924b, type: 2}
+  - {fileID: 11400000, guid: bda3435021d5c8b41a49769ec5a7a4c0, type: 2}
+  - {fileID: 11400000, guid: 7827d24522817f649a74f6da7c428c10, type: 2}
   nonVisualInActions:
-  - {fileID: 11400000, guid: c33597e0a2119bd4fa50da8fa199635f, type: 2}
-  - {fileID: 11400000, guid: 13ef6bfa4e27cac43a3e60c01f54956c, type: 2}
-  - {fileID: 11400000, guid: 7f4fccb0aafbec64fb72132248c2023a, type: 2}
-  - {fileID: 11400000, guid: cd39146091bbf49478442b0af8912952, type: 2}
+  - {fileID: 11400000, guid: 5bce29029a7243b4b8eeac6af7bdf084, type: 2}
+  - {fileID: 11400000, guid: 84bb66706fc43c84585e22c0a503924b, type: 2}
+  - {fileID: 11400000, guid: bda3435021d5c8b41a49769ec5a7a4c0, type: 2}
+  - {fileID: 11400000, guid: 7827d24522817f649a74f6da7c428c10, type: 2}
   visualActions: []
   poseActions: []
   skeletonActions: []
   outActionArray: []
   fullPath: /actions/buggy
   usage: single
-  inActions: {fileID: 11400000, guid: 201de010595489542a7dc90da69d3874, type: 2}
+  inActions: {fileID: 11400000, guid: 4a2caa3d6f4249b498e7b91276daef35, type: 2}

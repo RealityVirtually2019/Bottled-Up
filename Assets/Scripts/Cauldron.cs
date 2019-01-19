@@ -15,14 +15,13 @@ public class Cauldron : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AddPreparedIngredient(IngredientType.GLOWSHROOM);
-        AddPreparedIngredient(IngredientType.SABERCLAW);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (stirringProgress >= 100)
+        if (stirringProgress >= 2)
         {
             stirringProgress = 0;
             Brew();
@@ -48,10 +47,10 @@ public class Cauldron : MonoBehaviour
             if (toolSpeed >= minStirSpeed)
             {
                 stirringProgress += Mathf.Clamp(toolSpeed, 0, clampMaxStirSpeed) * stirringProgressMultiplier * Time.deltaTime;
-                //if (Random.value < 0.05f)
-                //{
-                //    Debug.Log("Stirring progress: " + stirringProgress);
-                //}
+                if (Random.value < 0.2f)
+                {
+                    Debug.Log("Stirring progress: " + stirringProgress);
+                }
             }
         }
     }
@@ -61,12 +60,15 @@ public class Cauldron : MonoBehaviour
         ingredients.TryGetValue(ingredientType, out int count);
         if (count == 0) ingredients.Add(ingredientType, 1);
         else ingredients[ingredientType]++;
+        Debug.Log("adding " + ingredientType);
     }
 
     void Brew()
     {
         potionType = recipeBook.GetBrewingResult(ingredients);
-        //Debug.Log("Potion type is " + potionType);
+        Debug.Log("Potion type is " + potionType);
+        gameObject.GetComponent<Potion>().ChangeColor(potionType);
+
     }
 
     public PotionType GetPotionType()

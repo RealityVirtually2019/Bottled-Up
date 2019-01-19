@@ -49,4 +49,4 @@ MonoBehaviour:
     createdPotionType: 1
   - ingredientTypes: 00000000
     ingredientCounts: 02000000
-    createdPotionType: 2
+    createdPotionType: 1

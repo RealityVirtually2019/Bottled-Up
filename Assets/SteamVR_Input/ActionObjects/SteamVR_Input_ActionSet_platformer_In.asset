@@ -3,18 +3,19 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29f109e9687480349b8808b5b36a1bbc, type: 3}
+  m_Script: {fileID: 11500000, guid: f6c86fe1bbb8bf340b91d27881839032, type: 3}
   m_Name: SteamVR_Input_ActionSet_platformer_In
   m_EditorClassIdentifier: 
   actionSet: {fileID: 0}
   listDirection: 0
   actions:
-  - {fileID: 11400000, guid: 797db5c3797dac348bb5caecead7593f, type: 2}
-  - {fileID: 11400000, guid: 3b61b24d0ac17554bae3105c17aefc48, type: 2}
-  Move: {fileID: 11400000, guid: 797db5c3797dac348bb5caecead7593f, type: 2}
-  Jump: {fileID: 11400000, guid: 3b61b24d0ac17554bae3105c17aefc48, type: 2}
+  - {fileID: 11400000, guid: d055c73c120cfc741b4ae6de15be0a50, type: 2}
+  - {fileID: 11400000, guid: 05fc17f9adac7154692aa93c61d80b81, type: 2}
+  Move: {fileID: 11400000, guid: d055c73c120cfc741b4ae6de15be0a50, type: 2}
+  Jump: {fileID: 11400000, guid: 05fc17f9adac7154692aa93c61d80b81, type: 2}

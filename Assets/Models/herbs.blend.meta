@@ -3,6 +3,47 @@ guid: 042f108b2396c4f168464558ef0be2b4
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
+    100000: Cylinder
+    100002: //RootNode
+    100004: Plant_c_03_LOD2_000
+    100006: Plant_c_03_LOD2_001
+    100008: Plant_c_03_LOD2_002
+    100010: Plant_c_03_LOD2_003
+    100012: Plant_c_03_LOD2_004
+    100014: Plant_c_03_LOD2_066
+    400000: Cylinder
+    400002: //RootNode
+    400004: Plant_c_03_LOD2_000
+    400006: Plant_c_03_LOD2_001
+    400008: Plant_c_03_LOD2_002
+    400010: Plant_c_03_LOD2_003
+    400012: Plant_c_03_LOD2_004
+    400014: Plant_c_03_LOD2_066
+    2100000: Leaves_Green_02
+    2100002: Material_001
+    2300000: Cylinder
+    2300002: Plant_c_03_LOD2_000
+    2300004: Plant_c_03_LOD2_001
+    2300006: Plant_c_03_LOD2_002
+    2300008: Plant_c_03_LOD2_003
+    2300010: Plant_c_03_LOD2_004
+    2300012: Plant_c_03_LOD2_066
+    3300000: Cylinder
+    3300002: Plant_c_03_LOD2_000
+    3300004: Plant_c_03_LOD2_001
+    3300006: Plant_c_03_LOD2_002
+    3300008: Plant_c_03_LOD2_003
+    3300010: Plant_c_03_LOD2_004
+    3300012: Plant_c_03_LOD2_066
+    4300000: Plant_c_03_LOD2_004
+    4300002: Plant_c_03_LOD2_003
+    4300004: Plant_c_03_LOD2_002
+    4300006: Plant_c_03_LOD2_001
+    4300008: Plant_c_03_LOD2_000
+    4300010: Plant_c_03_LOD2_066
+    4300012: Cylinder
+    7400000: Default Take
+    9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -57,7 +98,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

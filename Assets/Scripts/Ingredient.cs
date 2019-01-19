@@ -12,13 +12,13 @@ public class Ingredient : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider otherCollider)
@@ -57,8 +57,8 @@ public class Ingredient : MonoBehaviour
 
     private void ReplaceWithPreparedForm()
     {
-        Transform parentTransform = gameObject.GetComponentInParent<Transform>();
-        Instantiate(preparedForm, parentTransform.position, parentTransform.rotation);
+        // Transform parentTransform = gameObject.GetComponentInParent<Transform>();
+        Instantiate(preparedForm, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }

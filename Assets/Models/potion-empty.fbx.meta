@@ -1,29 +1,14 @@
 fileFormatVersion: 2
-guid: 318dab67583b344e98ab4295f08477c9
+guid: 394e69e7c3236b04682516fdc96e6517
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Group16029
-    100004: Group16045
-    100006: Group16109
     400000: //RootNode
-    400002: Group16029
-    400004: Group16045
-    400006: Group16109
-    2100000: Group16029Mat
-    2100002: Group16045Mat
-    2100004: Group16109Mat
-    2300000: Group16029
-    2300002: Group16045
-    2300004: Group16109
-    3300000: Group16029
-    3300002: Group16045
-    3300004: Group16109
-    4300000: Group16029
-    4300002: Group16045
-    4300004: Group16109
-    2186277476908879412: ImportLogs
+    2100000: glass
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pCylinder25.001
   externalObjects: {}
   materials:
     importMaterials: 1
