@@ -76,8 +76,10 @@ public class Cauldron : MonoBehaviour
         return potionType;
     }
 
-    private void Reset()
+    public void Reset()
     {
+        Debug.Log("cauldron resetting");
         ingredients.Clear();
+        potionType = PotionType.NONE;
     }
 }
