@@ -23,7 +23,30 @@ public class Bottle : MonoBehaviour
         {
             type = cauldron.GetPotionType();
             Debug.Log("This bottle is now of type " + type);
+            switch (type)
+            {
+                case PotionType.GREEN:
+                    ChangeColor("greenMat");
+                    break;
+                case PotionType.BLUE:
+                    ChangeColor("blueMat");
+                    break;
+                case PotionType.RED:
+                    ChangeColor("redMat");
+                    break;
+                case PotionType.MISTAKE:
+                    ChangeColor("mistake");
+                    break;
+                default:
+                    ChangeColor("default");
+                    break;
+            }
         }
+    }
+
+    void ChangeColor(string typeName)
+    {
+        gameObject.transform.GetChild(1).GetComponent<Renderer>().material = Resources.Load(typeName, typeof(Material)) as Material;
     }
 
     private void Reset()

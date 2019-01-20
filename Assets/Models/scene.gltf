@@ -1,0 +1,165 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 282,
+      "max": [
+        1.0235500335693359,
+        1.4197900295257568,
+        0.098650000989437103
+      ],
+      "min": [
+        -1.0235500335693359,
+        -7.1534299850463867,
+        -0.45405000448226929
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 3384,
+      "componentType": 5126,
+      "count": 282,
+      "max": [
+        0.99939405918121338,
+        0.79309511184692383,
+        1
+      ],
+      "min": [
+        -0.99939405918121338,
+        -0.63676971197128296,
+        -0.99999964237213135
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 420,
+      "max": [
+        281
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Jiří Kuba (https://sketchfab.com/kuba.jirka)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/747a541d6dca4c8c8df2f4ec0f37c00e",
+      "title": "Spoon"
+    },
+    "generator": "Sketchfab-3.18.6",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1680,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6768,
+      "byteOffset": 1680,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 8448,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "SpoonMaterial",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.54885095360000002,
+          0.54885095360000002,
+          0.54885095360000002,
+          1
+        ],
+        "metallicFactor": 0.2943978659,
+        "roughnessFactor": 0.35194359760000005
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Spoon_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "Spoon"
+    },
+    {
+      "mesh": 0,
+      "name": "Spoon_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
