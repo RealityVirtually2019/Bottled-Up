@@ -1,84 +1,72 @@
 fileFormatVersion: 2
-guid: 042f108b2396c4f168464558ef0be2b4
+guid: 4bfb791ff5da502408de5ba2de2d2023
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Cylinder
-    100002: //RootNode
-    100004: Plant_c_03_LOD2_000
-    100006: Plant_c_03_LOD2_001
-    100008: Plant_c_03_LOD2_002
-    100010: Plant_c_03_LOD2_003
-    100012: Plant_c_03_LOD2_004
-    100014: Plant_c_03_LOD2_066
-    100016: Cylinder_001
-    100018: Cylinder_002
-    100020: Cylinder_003
-    100022: Cylinder_004
-    100024: Cylinder_005
-    100026: Cylinder_006
-    100028: Cylinder_007
+    100002: Cylinder.001
+    100004: Cylinder.002
+    100006: Cylinder.003
+    100008: Cylinder.004
+    100010: Cylinder.005
+    100012: Cylinder.006
+    100014: Cylinder.007
+    100016: //RootNode
+    100018: Plant_c_03_LOD2.000
+    100020: Plant_c_03_LOD2.001
+    100022: Plant_c_03_LOD2.003
+    100024: Plant_c_03_LOD2.066
     400000: Cylinder
-    400002: //RootNode
-    400004: Plant_c_03_LOD2_000
-    400006: Plant_c_03_LOD2_001
-    400008: Plant_c_03_LOD2_002
-    400010: Plant_c_03_LOD2_003
-    400012: Plant_c_03_LOD2_004
-    400014: Plant_c_03_LOD2_066
-    400016: Cylinder_001
-    400018: Cylinder_002
-    400020: Cylinder_003
-    400022: Cylinder_004
-    400024: Cylinder_005
-    400026: Cylinder_006
-    400028: Cylinder_007
-    2100000: Leaves_Green_02
-    2100002: Material_001
+    400002: Cylinder.001
+    400004: Cylinder.002
+    400006: Cylinder.003
+    400008: Cylinder.004
+    400010: Cylinder.005
+    400012: Cylinder.006
+    400014: Cylinder.007
+    400016: //RootNode
+    400018: Plant_c_03_LOD2.000
+    400020: Plant_c_03_LOD2.001
+    400022: Plant_c_03_LOD2.003
+    400024: Plant_c_03_LOD2.066
+    2100000: Material.001
+    2100002: Leaves_Green_02
     2300000: Cylinder
-    2300002: Plant_c_03_LOD2_000
-    2300004: Plant_c_03_LOD2_001
-    2300006: Plant_c_03_LOD2_002
-    2300008: Plant_c_03_LOD2_003
-    2300010: Plant_c_03_LOD2_004
-    2300012: Plant_c_03_LOD2_066
-    2300014: Cylinder_001
-    2300016: Cylinder_002
-    2300018: Cylinder_003
-    2300020: Cylinder_004
-    2300022: Cylinder_005
-    2300024: Cylinder_006
-    2300026: Cylinder_007
+    2300002: Cylinder.001
+    2300004: Cylinder.002
+    2300006: Cylinder.003
+    2300008: Cylinder.004
+    2300010: Cylinder.005
+    2300012: Cylinder.006
+    2300014: Cylinder.007
+    2300016: Plant_c_03_LOD2.000
+    2300018: Plant_c_03_LOD2.001
+    2300020: Plant_c_03_LOD2.003
+    2300022: Plant_c_03_LOD2.066
     3300000: Cylinder
-    3300002: Plant_c_03_LOD2_000
-    3300004: Plant_c_03_LOD2_001
-    3300006: Plant_c_03_LOD2_002
-    3300008: Plant_c_03_LOD2_003
-    3300010: Plant_c_03_LOD2_004
-    3300012: Plant_c_03_LOD2_066
-    3300014: Cylinder_001
-    3300016: Cylinder_002
-    3300018: Cylinder_003
-    3300020: Cylinder_004
-    3300022: Cylinder_005
-    3300024: Cylinder_006
-    3300026: Cylinder_007
-    4300000: Plant_c_03_LOD2_004
-    4300002: Plant_c_03_LOD2_003
-    4300004: Plant_c_03_LOD2_002
-    4300006: Plant_c_03_LOD2_001
-    4300008: Plant_c_03_LOD2_000
-    4300010: Plant_c_03_LOD2_066
-    4300012: Cylinder
-    4300014: Cylinder_007
-    4300016: Cylinder_006
-    4300018: Cylinder_005
-    4300020: Cylinder_004
-    4300022: Cylinder_003
-    4300024: Cylinder_002
-    4300026: Cylinder_001
-    7400000: Default Take
-    9500000: //RootNode
+    3300002: Cylinder.001
+    3300004: Cylinder.002
+    3300006: Cylinder.003
+    3300008: Cylinder.004
+    3300010: Cylinder.005
+    3300012: Cylinder.006
+    3300014: Cylinder.007
+    3300016: Plant_c_03_LOD2.000
+    3300018: Plant_c_03_LOD2.001
+    3300020: Plant_c_03_LOD2.003
+    3300022: Plant_c_03_LOD2.066
+    4300000: Cylinder.007
+    4300002: Cylinder.006
+    4300004: Cylinder.005
+    4300006: Cylinder.004
+    4300008: Cylinder.003
+    4300010: Cylinder.002
+    4300012: Cylinder.001
+    4300014: Plant_c_03_LOD2.003
+    4300016: Plant_c_03_LOD2.001
+    4300018: Plant_c_03_LOD2.000
+    4300020: Plant_c_03_LOD2.066
+    4300022: Cylinder
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -133,7 +121,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -160,7 +148,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ShelvesLight
+  m_Name: ShelvesBack
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -73,5 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.4433962, g: 0.2663166, b: 0.17777678, a: 1}
+    - _Color: {r: 0.28235295, g: 0.3137255, b: 0.27450982, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
