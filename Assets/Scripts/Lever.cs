@@ -14,7 +14,7 @@ public class Lever : MonoBehaviour
     {
         initialY = transform.localPosition.y;
         initialZ = transform.localPosition.z;
-        transform.localPosition = new Vector3(-maxDist, initialY, initialZ);
+        transform.localPosition = new Vector3(maxDist, initialY, initialZ);
     }
 
     // Update is called once per frame
