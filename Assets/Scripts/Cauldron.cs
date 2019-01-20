@@ -12,6 +12,10 @@ public class Cauldron : MonoBehaviour
     private Dictionary<IngredientType, int> ingredients = new Dictionary<IngredientType, int>();
     private PotionType potionType = PotionType.NONE;
 
+
+    public AudioSource splashSound;
+    public AudioSource stirSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +29,9 @@ public class Cauldron : MonoBehaviour
         {
             stirringProgress = 0;
             Brew();
+
+            //
+            stirSound.Stop();
         }
     }
 
@@ -33,6 +40,10 @@ public class Cauldron : MonoBehaviour
         PreparedIngredient collidedIngredient = otherCollider.GetComponent<PreparedIngredient>();
         if (collidedIngredient != null)
         {
+            //
+            splashSound.Play();
+
+
             AddPreparedIngredient(collidedIngredient.ingredientType);
             collidedIngredient.OnCauldronEnter();
         }
@@ -46,6 +57,12 @@ public class Cauldron : MonoBehaviour
             float toolSpeed = collidedTool.GetSpeed();
             if (toolSpeed >= minStirSpeed)
             {
+
+                // 
+                if (stirSound.isPlaying == false){
+                    stirSound.Play();
+                }
+
                 stirringProgress += Mathf.Clamp(toolSpeed, 0, clampMaxStirSpeed) * stirringProgressMultiplier * Time.deltaTime;
                 if (Random.value < 0.2f)
                 {
