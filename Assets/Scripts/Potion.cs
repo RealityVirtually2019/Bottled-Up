@@ -26,9 +26,17 @@ public class Potion : MonoBehaviour
         {
             potionMaterial = "mistake";
         }
-        else if (potionType == PotionType.HEALTH)
+        else if (potionType == PotionType.GREEN)
         {
-            potionMaterial = "health";
+            potionMaterial = "greenMat";
+        }
+        else if (potionType == PotionType.BLUE)
+        {
+            potionMaterial = "blueMat";
+        }
+        else if (potionType == PotionType.RED)
+        {
+            potionMaterial = "redMat";
         }
         //change potion material
         GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
