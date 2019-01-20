@@ -1,52 +1,20 @@
 fileFormatVersion: 2
-guid: 1e74151b627de6849a78e0ed2226e259
+guid: fd3a22dbce2194455820ef6cdbc30600
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cone
-    100002: //RootNode
-    100004: Torus_001
-    100006: vial_1
-    100008: vial_2
-    100010: vial_3
-    100012: vial_4
-    100014: vial_5
-    400000: Cone
-    400002: //RootNode
-    400004: Torus_001
-    400006: vial_1
-    400008: vial_2
-    400010: vial_3
-    400012: vial_4
-    400014: vial_5
-    2100000: unnamed
-    2100002: Material_001
-    2100004: glass
-    2300000: Cone
-    2300002: Torus_001
-    2300004: vial_1
-    2300006: vial_2
-    2300008: vial_3
-    2300010: vial_4
-    2300012: vial_5
-    3300000: Cone
-    3300002: Torus_001
-    3300004: vial_1
-    3300006: vial_2
-    3300008: vial_3
-    3300010: vial_4
-    3300012: vial_5
-    4300000: Torus_001
-    4300002: Cone
-    4300004: vial_5
-    4300006: vial_4
-    4300008: vial_3
-    4300010: vial_2
-    4300012: vial_1
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
-  externalObjects: {}
+    100000: //RootNode
+    400000: //RootNode
+    2100000: SpoonMaterial
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Spoon
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SpoonMaterial
+    second: {fileID: 2100000, guid: 123dc657b04b0488f868db67c7f6d991, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -99,7 +67,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -126,7 +94,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
