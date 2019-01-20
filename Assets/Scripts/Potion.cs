@@ -15,14 +15,14 @@ public class Potion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ChangeColor(PotionType potionType)
     {
         var potionMaterial = "";
 
-        if (potionType == PotionType.NONE)
+        if (potionType == PotionType.NONE || potionType == PotionType.MISTAKE)
         {
             potionMaterial = "mistake";
         }
@@ -46,8 +46,9 @@ public class Potion : MonoBehaviour
         splash.GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
     }
 
-    private void Reset()
+    public void Reset()
     {
+        GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
         splash.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
         bubbles.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
     }

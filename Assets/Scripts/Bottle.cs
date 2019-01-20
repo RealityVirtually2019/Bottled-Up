@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class Bottle : MonoBehaviour
 {
-    public PotionType type; 
+    public PotionType type;
+    public GameObject bottleColorObject;
+
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider otherCollider)
@@ -22,6 +24,8 @@ public class Bottle : MonoBehaviour
         if (cauldron != null && cauldron.GetPotionType() != PotionType.NONE)
         {
             type = cauldron.GetPotionType();
+            cauldron.Reset();
+            Debug.Log("The cauldron is of type: " + cauldron.GetPotionType());
             Debug.Log("This bottle is now of type " + type);
             switch (type)
             {
@@ -46,7 +50,7 @@ public class Bottle : MonoBehaviour
 
     void ChangeColor(string typeName)
     {
-        gameObject.transform.GetChild(1).GetComponent<Renderer>().material = Resources.Load(typeName, typeof(Material)) as Material;
+        bottleColorObject.GetComponent<Renderer>().material = Resources.Load(typeName, typeof(Material)) as Material;
     }
 
     private void Reset()
