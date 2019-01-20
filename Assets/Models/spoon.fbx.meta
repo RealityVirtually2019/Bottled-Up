@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: fd3a22dbce2194455820ef6cdbc30600
+=======
+guid: b4c4d091fa75fb04685ec5a1e17a0cde
+>>>>>>> e353af06ce37a83287eb15524dd238cbf58ac08f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -9,12 +13,16 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Spoon
+<<<<<<< HEAD
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SpoonMaterial
     second: {fileID: 2100000, guid: 123dc657b04b0488f868db67c7f6d991, type: 2}
+=======
+  externalObjects: {}
+>>>>>>> e353af06ce37a83287eb15524dd238cbf58ac08f
   materials:
     importMaterials: 1
     materialName: 0
