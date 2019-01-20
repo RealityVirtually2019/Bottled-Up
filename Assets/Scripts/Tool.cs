@@ -8,6 +8,9 @@ public class Tool : MonoBehaviour
     private Vector3 priorPos;
     private Vector3 currentPos;
     private Vector3 velocity;
+    private bool isActiveTool = true;
+    private float deactivatedTime = 0;
+    private float cooldownTime = 0.65f;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +18,7 @@ public class Tool : MonoBehaviour
         priorPos = transform.position;
         currentPos = transform.position;
         velocity = new Vector3(0, 0, 0);
+        deactivatedTime = Time.time;
     }
 
     // Update is called once per frame
@@ -23,11 +27,24 @@ public class Tool : MonoBehaviour
         currentPos = transform.position;
         velocity = (currentPos - priorPos) / Time.deltaTime;
         priorPos = transform.position;
+        if (!isActiveTool && Time.time - deactivatedTime > cooldownTime)
+        {
+            isActiveTool = true;
+        }
     }
 
     public float GetSpeed()
     {
         return velocity.magnitude;
+    }
+
+    public void DeactivateTool() {
+        isActiveTool = false;
+        deactivatedTime = Time.time;
+    }
+
+    public bool IsActiveTool() {
+        return isActiveTool;
     }
 
 
