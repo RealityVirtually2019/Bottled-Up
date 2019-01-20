@@ -48,6 +48,7 @@ public class Potion : MonoBehaviour
 
     public void Reset()
     {
+        Debug.Log("potion resetting");
         GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
         splash.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
         bubbles.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
