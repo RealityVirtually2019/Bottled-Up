@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.0175148, g: 0.9376497, b: 0.66895044, a: 1}
+  m_IndirectSpecularColor: {r: 1.0175148, g: 0.93764985, b: 0.66895056, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -129,7 +129,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 93e23de9d4a5643668bf8cd8cb8a6662, type: 2}
+  - {fileID: 2100000, guid: 984c2f8b977ff4dffab3c3832314d3a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -990,7 +990,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f320aa54e240c49849740c4bf6ae88ba, type: 2}
+  - {fileID: 2100000, guid: 534a5b4eb02464223b534fd726ec7e38, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1106,7 +1106,7 @@ PrefabInstance:
     - target: {fileID: 2300002, guid: 6743e110ef5b44a199564e76484a77d8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 93e23de9d4a5643668bf8cd8cb8a6662, type: 2}
+      objectReference: {fileID: 2100000, guid: 534a5b4eb02464223b534fd726ec7e38, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6743e110ef5b44a199564e76484a77d8, type: 3}
 --- !u!1 &1310946820
@@ -1565,7 +1565,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 123dc657b04b0488f868db67c7f6d991, type: 2}
+  - {fileID: 2100000, guid: 984c2f8b977ff4dffab3c3832314d3a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26242,6 +26242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  bottleColorObject: {fileID: 0}
 --- !u!4 &8317207342032981149
 Transform:
   m_ObjectHideFlags: 0
