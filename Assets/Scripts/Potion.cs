@@ -15,14 +15,14 @@ public class Potion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ChangeColor(PotionType potionType)
     {
         var potionMaterial = "";
 
-        if (potionType == PotionType.NONE)
+        if (potionType == PotionType.NONE || potionType == PotionType.MISTAKE)
         {
             potionMaterial = "mistake";
         }

@@ -47,6 +47,9 @@ MonoBehaviour:
   - ingredientTypes: 0100000000000000
     ingredientCounts: 0100000001000000
     createdPotionType: 1
-  - ingredientTypes: 00000000
-    ingredientCounts: 02000000
-    createdPotionType: 1
+  - ingredientTypes: 0000000002000000
+    ingredientCounts: 0100000001000000
+    createdPotionType: 3
+  - ingredientTypes: 0100000002000000
+    ingredientCounts: 0100000001000000
+    createdPotionType: 2

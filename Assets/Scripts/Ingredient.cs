@@ -24,8 +24,9 @@ public class Ingredient : MonoBehaviour
     private void OnTriggerEnter(Collider otherCollider)
     {
         Tool collidedTool = otherCollider.GetComponent<Tool>();
-        if (collidedTool != null && collidedTool.toolType == toolType)
+        if (collidedTool != null && collidedTool.toolType == toolType && collidedTool.IsActiveTool())
         {
+            collidedTool.DeactivateTool();
             HitByTool();
         }
         Cauldron collidedCauldron = otherCollider.GetComponent<Cauldron>();

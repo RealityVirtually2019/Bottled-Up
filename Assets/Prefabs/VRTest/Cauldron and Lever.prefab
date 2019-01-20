@@ -169,7 +169,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 36738325a346940bba21229e15a5fdce, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubbles: {fileID: 8172959547523057470}
-  splash: {fileID: 6019575333364942690, guid: 243a61aca763c43aaa5e189fe1bb4266, type: 3}
+  splash: {fileID: 8172959547523057470}
 --- !u!54 &2194948494281076625
 Rigidbody:
   m_ObjectHideFlags: 0

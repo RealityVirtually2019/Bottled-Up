@@ -66,6 +66,7 @@ public class Cauldron : MonoBehaviour
     void Brew()
     {
         potionType = recipeBook.GetBrewingResult(ingredients);
+        ingredients.Clear();
         Debug.Log("Potion type is " + potionType);
         gameObject.GetComponent<Potion>().ChangeColor(potionType);
 
@@ -78,8 +79,10 @@ public class Cauldron : MonoBehaviour
 
     public void Reset()
     {
-        Debug.Log("cauldron resetting");
-        ingredients.Clear();
+        Debug.Log("Resetting cauldron.");
         potionType = PotionType.NONE;
+        ingredients.Clear();
+        Debug.Log("Potion component: " + gameObject.GetComponent<Potion>());
+        gameObject.GetComponent<Potion>().Reset();
     }
 }
