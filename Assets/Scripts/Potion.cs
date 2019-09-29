@@ -41,16 +41,16 @@ public class Potion : MonoBehaviour
         //change potion material
         GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
         //change bubble material
-        bubbles.GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
+        //bubbles.GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
         //change splash material
-        splash.GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
+        //splash.GetComponent<Renderer>().material = Resources.Load(potionMaterial, typeof(Material)) as Material;
     }
 
     public void Reset()
     {
         Debug.Log("potion resetting");
         GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
-        splash.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
-        bubbles.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
+        //splash.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
+        //bubbles.GetComponent<Renderer>().material = Resources.Load("default", typeof(Material)) as Material;
     }
 }

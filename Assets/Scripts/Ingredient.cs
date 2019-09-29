@@ -59,7 +59,7 @@ public class Ingredient : MonoBehaviour
     private void ReplaceWithPreparedForm()
     {
         // Transform parentTransform = gameObject.GetComponentInParent<Transform>();
-        Instantiate(preparedForm, transform.position, transform.rotation);
+        Instantiate(preparedForm, transform.position, transform.rotation, GameObject.FindWithTag("Scene").transform);
         Destroy(gameObject);
     }
 }
